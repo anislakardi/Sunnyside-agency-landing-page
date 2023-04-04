@@ -35,6 +35,9 @@ body{
   "foot foot foot foot";
   grid-gap: 0px;
 }
+.hamb{
+  display: none;
+}
 .box{
   background-color:var(--White);
 }
@@ -101,6 +104,9 @@ body{
   align-items: center;
   margin-top: 10%;
   margin-left: 10%;
+}
+.hamb{
+  grid-area: hamb;
 }
 .hach{
   grid-area: hach;
@@ -541,9 +547,23 @@ height:75px;
       justify-items:unset;
       text-align: center;
     }
-
-
-
+    .title{
+      grid-area: ti;
+      text-align: center;
+      font-size: 25px;
+      font-family: var(--font-family2);
+      color: var(--White);
+    }
+    .nav{
+      grid-area: navig;
+      display: grid;
+      grid-template-areas:"logos hamb hamb hamb";
+    }
+    .hamb{
+      display: block;
+      margin-top: 10%;
+      margin-left: 80%;
+    }
 
 
 
