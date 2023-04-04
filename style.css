@@ -517,8 +517,10 @@ height:75px;
       background-position: center;
     }
     .footer_title{
-    margin-left: 80%;
-    padding-left: 70%;
+      margin-top: 10%;
+      margin-bottom:10%;
+      margin-left: 125px;
+      margin-right: 100px;
     }
     .choses{
       grid-area:choses;
@@ -535,20 +537,10 @@ height:75px;
       color: var(--Dark-desaturated-cyan);
     }
     .box_footer{
-      grid-area: foot;
-      background-color: var(--Dark-moderate-cyan);
-      display: grid;
-      grid-template-areas: 
-      "footer_title footer_title footer_title footer_title"
-      "footer_title footer_title footer_title footer_title"
-      "choses choses choses choses"
-      "social social social social"
-      ;
-      align-items: center;
-      justify-items: center;
+      align-items:unset;
+      justify-items:unset;
+      text-align: center;
     }
-
-
 
 
 
