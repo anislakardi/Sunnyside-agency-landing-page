@@ -16,7 +16,7 @@
   --Yellow: hsl(51, 100%, 49%);
   --Dark-desaturated-cyan: hsl(167, 40%, 24%);
   --Dark-blue: hsl(198, 62%, 26%);
-  --Dark-moderate-cyan: hsl(168, 34%, 41%);
+  --Dark-moderate-cyan: hsl(168, 43%, 36%);
 }
 body{
   box-sizing: border-box;
@@ -76,7 +76,7 @@ body{
 }
 .box_footer{
   grid-area: foot;
-  background-color: var(--Dark-moderate-cyan);
+  background-color:#91d4c6;
   display: grid;
   grid-template-areas: 
   "footer_title footer_title footer_title footer_title"
@@ -206,10 +206,11 @@ color: var(--Dark-grayish-blue);
   grid-area: opinions_title;
   margin-top: 10%;
   margin-bottom: 5%;
-  padding-left: 42%;
+  padding-left: 35%;
   font-size: 18px;
   color: var(--Grayish-blue);
   font-family: var(--font-family2);
+  letter-spacing: 10px;
 }
 .pic1_cn2{
   grid-area: pic1_cn2;
@@ -242,18 +243,18 @@ color: var(--Dark-grayish-blue);
 .footer_title{
   align-items: center;
   margin-top: 10%;
-  margin-bottom:10%;
+  margin-bottom: 10%;
   margin-left: 290%;
 }
 .choses{
   grid-area:choses;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .social{
   grid-area:social;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 #hach5,#hach6,#hach7{
@@ -272,8 +273,17 @@ h2{
 h3{
   color: var(--Very-dark-desaturated-blue);
 }
-#l1,#l2{
+#l1{
   margin-top: 15%;
+  padding: 0 5px;
+  background: linear-gradient(to bottom, transparent 50%, hsl(51, 100%, 49%) 70% );
+  display: inline-block;
+}
+#l2{
+  margin-top: 15%;
+  padding: 0 5px;
+  background: linear-gradient(to bottom, transparent 50%, hsl(7, 99%, 70%) 70% );
+  display: inline-block;
 }
 #l3{
   margin-top:119%;
@@ -311,7 +321,7 @@ height:75px;
 .pic_jen{
   clip-path: circle();
   margin-left: 30%;
-  margin-bottom: 10%;
+  margin-bottom: 9%;
   width:75px;
   height:75px;
 }
@@ -321,18 +331,21 @@ height:75px;
   padding-bottom: 5%;
   font-size: 18px;
   justify-content: center;
+  text-align: center;
 }
 .text_thom{
   padding-left: 12%;
   padding-right: 10%;
   padding-bottom: 5%;
   font-size: 18px;
+  text-align: center;
 }
 .text_jen{
   padding-left: 5%;
   padding-right:20%;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
   font-size: 18px;
+  text-align: center;
 }
 .name_emi{
   font-family: var(--font-family2);
@@ -341,28 +354,33 @@ height:75px;
 }
 .name_thoms{
   font-family: var(--font-family2);
-  padding-left: 41%;
+  padding-left: 42%;
   font-size: 18px;
 }
 .name_jen{
   font-family: var(--font-family2);
-  padding-left: 28%;
+  margin-top: 5%;
+  padding-left: 29%;
   font-size: 18px;
 }
 .job_emi{
-  padding-left: 40%;
+  padding-left: 42%;
   font-size: 18px;
   margin-bottom: 30%;
 }
 .job_thoms{
-  padding-left: 33%;
+  padding-left: 35%;
   font-size: 18px;
   margin-bottom: 30%;
 }
 .job_jen{
-  padding-left: 24%;
+  padding-left: 26%;
   font-size: 18px;
   margin-bottom: 30%;
+}
+a{
+  text-decoration: none;
+  font-size: 18px;
 }
 @media screen and (max-width: 414px ){
   .nav{
@@ -432,6 +450,14 @@ height:75px;
   }
   #l3,#l4{
     margin-left: 0%;
+  }
+  #l2,#l1{
+    transform: translate(-50%,-50%);
+    margin-left: 50%;
+  }
+  #l3{
+    transform: translate(-50%,-50%);
+    margin-left: 50%;
   }
   #p1,#p2{
     margin-bottom: 20%;
@@ -525,8 +551,7 @@ height:75px;
     .footer_title{
       margin-top: 10%;
       margin-bottom:10%;
-      margin-left: 125px;
-      margin-right: 100px;
+      margin-left: 100px;
     }
     .choses{
       grid-area:choses;
@@ -564,16 +589,7 @@ height:75px;
       margin-top: 10%;
       margin-left: 80%;
     }
-
-
-
-
-
-
-
-
-
-
-
-
+    a{
+      text-decoration: none;
+    }
 }
